@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.mouseWheelZoom": true,
+    "editor.inlayHints.fontSize": 10,
+    "editor.formatOnSave": true
+}
