@@ -27,6 +27,6 @@ function fizzBuzzReturn(n) {
     return result; // Return the built string  
   }
   
-  let output = fizzBuzzReturn(15);
-  console.log(output); 
+  // let output = fizzBuzzReturn(15);
+  // console.log(output); 
 // console.log(fizzBuzz(15))
