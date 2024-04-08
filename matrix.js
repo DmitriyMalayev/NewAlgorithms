@@ -6,6 +6,9 @@ function matrix(n) {
     let end_column = n - 1
     let end_row = n - 1
 
+    if (n < 3){
+        return false 
+    }
     for (let i = 0; i < n; i++) {
         results.push([])
     }
@@ -34,3 +37,5 @@ function matrix(n) {
     }
     return results
 }
+
+matrix(3)
