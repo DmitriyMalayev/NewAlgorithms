@@ -7,4 +7,7 @@ function myArrayMin(arr) {
       }
     }
     return min;
-  }
+  } 
+
+
+  myArrayMin([1,5,6,8,30,6,100])
