@@ -14,9 +14,8 @@ function* genny(){
     let i = 0;
 
     yield "a"
-
-
-   yield characters[i];
+    
+    yield characters[i];
     i++;
     yield characters[i];
     i++;
@@ -33,7 +32,7 @@ function* genny(){
     yield characters[i];
 }
 
-//let iter = genny();
+let iter = genny();
 //log(iter)    Generator 
 //log(iter.next());   {value: "a", done:false} 
 //log(iter.next());

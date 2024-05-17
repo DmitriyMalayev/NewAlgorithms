@@ -60,4 +60,3 @@ const SomeObj = {
 };
 
 console.log(Array.from(SomeObj)); // [ 1, 2, 3
-SomeObj
