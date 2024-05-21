@@ -173,10 +173,35 @@
 // functionOne();
 
 
-let message = "Hello World!";
-message[0] = "J";
-console.log(message);
+// let message = "Hello World!";
+// message[0] = "J";
+// console.log(message);
 
-let name = "John";
-name = name + " Smith";
-console.log(name);
+// let name = "John";
+// name = name + " Smith";
+// console.log(name);
+
+const origTarget = {a: "toy", b:"boy"}
+const origSource = {b: "bar", c: "car"}
+
+
+const returnedTarget = Object.assign(origTarget, origSource)
+
+returnedTarget.a = "apple"
+returnedTarget
+// target
+// returnedTarget === target
+// const alsoReturnedTarget = Object.create(target)
+
+
+const source = {
+    b: "bar",
+    c: "car"
+}
+
+const target = Object.create(source)
+target.b = "desk"
+target 
+source
+// target === source
+
