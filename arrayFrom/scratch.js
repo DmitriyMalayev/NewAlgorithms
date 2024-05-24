@@ -181,27 +181,138 @@
 // name = name + " Smith";
 // console.log(name);
 
-const origTarget = {a: "toy", b:"boy"}
-const origSource = {b: "bar", c: "car"}
+// const origTarget = {a: "toy", b:"boy"}
+// const origSource = {b: "bar", c: "car"}
 
 
-const returnedTarget = Object.assign(origTarget, origSource)
+// const returnedTarget = Object.assign(origTarget, origSource)
 
-returnedTarget.a = "apple"
-returnedTarget
+// returnedTarget.a = "apple"
+// returnedTarget
 // target
 // returnedTarget === target
 // const alsoReturnedTarget = Object.create(target)
 
 
-const source = {
-    b: "bar",
-    c: "car"
-}
+// const source = {
+//     b: "bar",
+//     c: "car"
+// }
 
-const target = Object.create(source)
-target.b = "desk"
-target 
-source
+// const target = Object.create(source)
+// target.b = "desk"
+// target 
+// source
 // target === source
 
+
+
+
+
+// const object1 = {
+//   property1: 42,
+// };
+
+// const descriptors1 = Object.getOwnPropertyDescriptors(object1);
+// const descriptor1 = Object.getOwnPropertyDescriptor(object1, 'property1');
+
+
+// let example = new Object({a: "one", b: "two"})
+// let example2 = {}
+
+// Object.getPrototypeOf(example)
+// Object.getPrototypeOf(example2) 
+
+// const person = {
+//   isHuman: false,
+//   printIntroduction: function () {
+//     console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+//   },
+// };
+
+// const me = Object.create(person);
+
+// Object.getPrototypeOf(person) 
+
+
+// let a = Object.create(null)
+// let b = Object.getPrototypeOf(a)
+
+
+
+// let regexp = /Hello(\d?)/g;
+// let greeting = "Hello1Hello2Hello3";
+
+// let greetingList = [...greeting.matchAll(regexp)];
+
+// console.log(greetingList[0]); //Hello1
+// console.log(greetingList[1]); //Hello2
+// console.log(greetingList[2]); //Hello3
+// console.log(false + true)
+
+// const obj = { a: 1, b: 2 };
+// const { a, b } = obj;
+// a 
+// b 
+
+// var myPrimitive = 30 
+// var myNonPrimitive = {}
+
+// function isPrimitive(val){
+//     return Object(val) !== val 
+// }
+
+
+// console.log(isPrimitive(myPrimitive))
+// console.log(isPrimitive(myNonPrimitive))
+
+// var a = 100;
+// function createFunction() {
+//   var a = 200;
+//   return new Function("return a;");
+// }
+// console.log(createFunction()()); // 100
+
+
+
+// var a = 100;
+// function createFunction() {
+//   var a = 200;
+//   return function func() {
+//     return a;
+//   };
+// }
+// console.log(createFunction()()); // 200 
+
+// void (function (dt) {
+//   console.log(dt.toLocaleTimeString());
+// })(new Date());
+
+// void (function (dt) {
+//   console.log(dt.toLocaleTimeString());
+// })(new Date()); 
+
+
+// const array1 = [
+//   [0, 1],
+//   [2, 3],
+//   [4, 5],
+// ];
+
+// const result = array1.reduceRight((accumulator, currentValue) =>
+//   accumulator.concat(currentValue),
+// );
+
+// console.log(result);
+// // Expected output: Array [4, 5, 2, 3, 0, 1]
+// console.log([0] == false);
+// if ([0]) {
+//   console.log("I'm True");
+// } else {
+//   console.log("I'm False");
+// }
+
+
+// console.log(Number([0].valueOf()))
+let numbers = [1, 2, NaN, 4];
+console.log(numbers.indexOf(NaN));
